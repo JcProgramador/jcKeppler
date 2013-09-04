@@ -1,0 +1,32 @@
+
+body{
+background: gray;
+}
+body .container{
+padding-top: 50px;
+}
+
+header{
+background: blue;	
+}
+footer{
+background: green;	
+}
+footer .span3{
+background: yellow;
+ }
+aside#panelcontrol{
+background: red;	
+}
+
+.nav-tabs{
+background: orange;	
+}
+
+.tab-content{
+	background: purple;
+}
+
+section#fotografias{
+	background: white;
+}
