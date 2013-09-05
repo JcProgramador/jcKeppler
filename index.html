@@ -2,10 +2,12 @@
 <html lang="es">
 <head>
 	<meta charset="utf8">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bjqs-1.3.min.js"></script>
+    <script src="js/jquery.secret-source.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css">	
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<meta http-equiv="Content-Type" content="text/html; utf-8"> 
 </head>
 <body>
 	<div class="container">
@@ -63,14 +65,41 @@
 			<section id="fotografias">
 
 				<div class="row">
-					<div class="span6">
-						SECCIÓN ALBUMES
+					<div class="span8">
+						<!--  Outer wrapper for presentation only, this can be anything you like -->
+      <div id="banner-fade">
+
+        <!-- start Basic Jquery Slider -->
+        <ul class="bjqs">
+          <li><img src="img/banner01.jpg" title="Automatically generated caption"></li>
+          <li><img src="img/banner02.jpg" title="Automatically generated caption"></li>
+          <li><img src="img/banner03.jpg" title="Automatically generated caption"></li>
+        </ul>
+        <!-- end Basic jQuery Slider -->
+
+      </div>
+      <!-- End outer wrapper -->
 					</div>
-					<div class="span6">
-						SECCIÓN GALERIAS
+					<div class="span4">
+						<img src="img/goku.jpg" height="150" width="150" class="img-polaroid">
+						<img src="img/goku.jpg" height="150" width="150" class="img-polaroid">
+						<img src="img/goku.jpg" height="150" width="150" class="img-polaroid">
+						<img src="img/goku.jpg" height="150" width="150" class="img-polaroid">
 					</div>
 				</div>
 			</section>
+			 <script class="secret-source">
+        jQuery(document).ready(function($) {
+
+          $('#banner-fade').bjqs({
+            height      : 342,
+            width       : 742,
+            responsive  : true,
+            showmarkers : !1
+          });
+
+        });
+      </script>
 			<!-- seccion footer -->
 			<footer>
 				<div class="row">
