@@ -71,9 +71,9 @@
 
         <!-- start Basic Jquery Slider -->
         <ul class="bjqs">
-          <li><img src="img/banner01.jpg" title="Automatically generated caption"></li>
-          <li><img src="img/banner02.jpg" title="Automatically generated caption"></li>
-          <li><img src="img/banner03.jpg" title="Automatically generated caption"></li>
+          <li class="uno"><img></li>
+          <li class="dos"><img></li>
+          <li class="tres"><img></li>
         </ul>
         <!-- end Basic jQuery Slider -->
 
@@ -81,10 +81,10 @@
       <!-- End outer wrapper -->
 					</div>
 					<div class="span4">
-						<img src="img/goku.jpg" height="150" width="150" class="img-polaroid">
-						<img src="img/goku.jpg" height="150" width="150" class="img-polaroid">
-						<img src="img/goku.jpg" height="150" width="150" class="img-polaroid">
-						<img src="img/goku.jpg" height="150" width="150" class="img-polaroid">
+						<img src="img/goku.jpg" height="150" width="150" class="img-polaroid" id="uno">
+						<img src="img/vegeta.jpg" height="150" width="150" class="img-polaroid" id="dos">
+						<img src="img/goku.jpg" height="150" width="150" class="img-polaroid" id="tres">
+						<img src="img/goku.jpg" height="150" width="150" class="img-polaroid" id="cuatro">
 					</div>
 				</div>
 			</section>
@@ -99,6 +99,18 @@
           });
 
         });
+
+  $("#uno").click(function() {
+  $( ".uno > img" ).attr({ src: "img/banner01.jpg"});
+  $( ".dos > img" ).attr({ src: "img/banner02.jpg"});
+  $( ".tres > img" ).attr({ src: "img/banner03.jpg"});
+  });
+
+  $("#dos").click(function() {
+  $( ".uno > img" ).attr({ src: "img/banner03.jpg"});
+  $( ".dos > img" ).attr({ src: "img/banner02.jpg"});
+  $( ".tres > img" ).attr({ src: "img/banner01.jpg"});
+  });
       </script>
 			<!-- seccion footer -->
 			<footer>
