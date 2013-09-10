@@ -83,8 +83,8 @@
 					<div class="span4">
 						<img src="img/goku.jpg" height="150" width="150" class="img-polaroid" id="uno">
 						<img src="img/vegeta.jpg" height="150" width="150" class="img-polaroid" id="dos">
-						<img src="img/goku.jpg" height="150" width="150" class="img-polaroid" id="tres">
-						<img src="img/goku.jpg" height="150" width="150" class="img-polaroid" id="cuatro">
+						<img src="img/gohan.jpg" height="150" width="150" class="img-polaroid" id="tres">
+						<img src="img/trunks.jpg" height="150" width="150" class="img-polaroid" id="cuatro">
 					</div>
 				</div>
 			</section>
@@ -100,16 +100,35 @@
 
         });
 
+       $(document).ready(function (){
+   $( ".uno > img" ).attr({ src: "img/1.jpg"});
+    $( ".dos > img" ).attr({ src: "img/2.jpg"});
+    $( ".tres > img" ).attr({ src: "img/3.jpg"});
+
+     } );
+
   $("#uno").click(function() {
-  $( ".uno > img" ).attr({ src: "img/banner01.jpg"});
-  $( ".dos > img" ).attr({ src: "img/banner02.jpg"});
-  $( ".tres > img" ).attr({ src: "img/banner03.jpg"});
+  $( ".uno > img" ).attr({ src: "img/1.jpg"});
+  $( ".dos > img" ).attr({ src: "img/2.jpg"});
+  $( ".tres > img" ).attr({ src: "img/3.jpg"});
   });
 
   $("#dos").click(function() {
-  $( ".uno > img" ).attr({ src: "img/banner03.jpg"});
-  $( ".dos > img" ).attr({ src: "img/banner02.jpg"});
-  $( ".tres > img" ).attr({ src: "img/banner01.jpg"});
+  $( ".uno > img" ).attr({ src: "img/4.jpg"});
+  $( ".dos > img" ).attr({ src: "img/5.jpg"});
+  $( ".tres > img" ).attr({ src: "img/6.jpg"});
+  });
+
+   $("#tres").click(function() {
+  $( ".uno > img" ).attr({ src: "img/7.jpg"});
+  $( ".dos > img" ).attr({ src: "img/8.png"});
+  $( ".tres > img" ).attr({ src: "img/9.jpg"});
+  });
+
+  $("#cuatro").click(function() {
+  $( ".uno > img" ).attr({ src: "img/10.jpg"});
+  $( ".dos > img" ).attr({ src: "img/11.jpg"});
+  $( ".tres > img" ).attr({ src: "img/12.jpg"});
   });
       </script>
 			<!-- seccion footer -->
